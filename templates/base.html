@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuckin Enterprise</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    
+    {% comment %} {% block extarhead %}
+    {% endblock extarhead %} {% endcomment %}
+
+    <!-- including css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
+</head>
+<body>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container">
+          <a href="{% url 'home' %}">
+          <img src="{% static 'images/stuckin_l2.png' %}" style="height: 50px; width:110px" alt="the stuckin logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" class="far fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link active" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'collection' %}">Collection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Premium</a>
+              </li>
+              <li class="nav-item">
+                <i class="far fa-search"></i>
+                <i class="far fa-shopping-bag"></i>
+              </li>
+          </div>
+        </div>
+    </nav>
+
+
+    {% block main_home_content %}
+      
+    {% endblock main_home_content %}
+
+    {% block collections %}{% endblock collections %}
+
+    {% block product_page %}
+  
+    {% endblock product_page %}
+
+    <footer class="mt-5 py-5">
+      <div class="row container mx-auto pt-5">
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <img src="{% static 'images/stuckin_logo.jpg' %}" style="height: 60px;"  alt="">
+          <p class="pt-3">STUCKIN enterprises is a new platform for men's to find a variety 
+            of casual and sports shoes. These shoes are "MADE IN INDIA" and we doing our level 
+            best to support the local business to grow online thus following the saying "VOCAL FOR LOCAL". 
+            The shoes are lightweight, comfortable, durable and stylish and helps you to give stylish and 
+            trending look in affordable prices</p>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+          <h5 class="pb-2">Feautred</h5>
+          <ul class="text-uppercase list-unstyled">
+            <li><a href="{% url 'collection' %}">casual</a></li>
+            <li><a href="{% url 'collection' %}" >sports</a></li>
+            <li><a href="{% url 'collection' %}">socks</a></li>
+            <li><a href="{% url 'collection' %}">running</a></li>            
+          </ul>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+          <h5 class="pb-2">Contacts</h5>
+          <div>            
+            <h6 class="text-uppercase">Address</h6>
+            <p>rajhdani park</p>
+          </div>
+          <div>
+            <h6 class="text-uppercase">phone</h6>
+            <p>9717655555</p>
+          </div>
+          <div>
+            <h6 class="text-uppercase">email</h6>
+            <p>info.stuckin@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Instgram</h5>
+          <div class="row">
+            <img src="{% static 'images/insta/1.jpg' %}" class="img-fluid w-25 h-100 m-2" alt="">
+            <img src="{% static 'images/insta/2.jpg' %}" class="img-fluid w-25 h-100 m-2" alt="">
+            <img src="{% static 'images/insta/3.jpg' %}" class="img-fluid w-25 h-100 m-2" alt="">
+            <img src="{% static 'images/insta/4.jpg' %}" class="img-fluid w-25 h-100 m-2" alt="">
+            <img src="{% static 'images/insta/5.jpg' %}" class="img-fluid w-25 h-100 m-2" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="copyright mt-5">
+        <div class="row container mx-auto">
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <img src="{% static 'images/payment.png' %}" alt="">
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+            <p>Stuckin Enterprise Ecommere 2021. All copyrights reserved</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <a target="_blank" href="https://www.instagram.com/stuckin_shoes/" ><i class="fab fa-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/stuckin_shoes/" ><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://www.instagram.com/stuckin_shoes/" ><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

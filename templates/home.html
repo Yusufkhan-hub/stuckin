@@ -1,0 +1,189 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block main_home_content %}
+
+
+<section id='home' class=>
+  <div class="container">
+      <h5 style="color: coral;">New Arrivals</h5>
+      <h1><span>Best Price...</span>&nbsp;Best Offer...</h1>
+      <!-- <p>ddhjgdhgdhgfdh<br>dddfghjdd</p> -->
+      <button><a href="{% url 'collection' %}" class="text-white"> SHOP NOW</a></button>
+  </div>
+</section>
+
+<section id="brand" class="container">
+<div class="row m-0 py-5">
+  <img class="img-fluid col-lg-2 col-md-4 col-6" src="{% static 'images/brand/1.png' %}" alt="">
+  <img class="img-fluid col-lg-2 col-md-4 col-6" src="{% static 'images/brand/2.png' %}" alt="">
+  <img class="img-fluid col-lg-2 col-md-4 col-6" src="{% static 'images/brand/3.png' %}" alt="">
+  <img class="img-fluid col-lg-2 col-md-4 col-6" src="{% static 'images/brand/4.png' %}" alt="">
+  <img class="img-fluid col-lg-2 col-md-4 col-6" src="{% static 'images/brand/5.png' %}" alt="">
+  <img class="img-fluid col-lg-2 col-md-4 col-6" src="{% static 'images/brand/6.png' %}" alt="">
+</div>
+</section>
+
+<section id="new" class="w-100">
+<div class="row p-0 m-0">
+  <div class="one col-lg-4 col-md-12 col-12 p-0">
+    <img class="img-fluid" src="{% static 'images/shoes/Social_media/5.jpg' %}" alt="">
+    <div class="details">
+      <h2>Extreme Rare Shoes</h2>
+      <button class="text-uppercase"><a href="{% url 'collection' %}" class="text-white"> SHOP NOW</a></button>
+    </div>
+  </div>
+  <div class="one col-lg-4 col-md-12 col-12 p-0">
+    <img class="img-fluid" src="{% static 'images/shoes/Social_media/6.jpg' %}" alt="">
+    <div class="details">
+      <h2>Extreme Rare Shoes</h2>
+      <button class="text-uppercase"><a href="{% url 'collection' %}" class="text-white"> SHOP NOW</a></button>
+    </div>
+  </div>
+  <div class="one col-lg-4 col-md-12 col-12 p-0">
+    <img class="img-fluid" src="{% static 'images/shoes/Social_media/8.jpg' %}" alt="">
+    <div class="details">
+      <h2>Extreme Rare Shoes</h2>
+      <button class="text-uppercase"><a href="{% url 'collection' %}" class="text-white"> SHOP NOW</a></button>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="featured" class="my-5 pb-5">
+<div class="container text-center mt-5 py-5">
+  <h3>Our Fetaured</h3>
+  <hr class="mx-auto">
+  <p>Amazing comfy sports shoes</p>
+</div>
+<div class="row mx-auto container-fluid">
+  <div class="product text-center col-lg-3 col-md-4 col-12">
+    <img class="img-fluid mb-3" src="{% static 'images/shoes/Spider_grey/5.jpg' %}" alt="">
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <h5 class="p-name">SPorts shoes</h5>
+    <h4 class="p-price">$92.00</h4>
+    <button class="buy-btn"><a href="{% url 'collection' %}" class="text-white"> BUY NOW</a></button>
+  </div>
+  <div class="product text-center col-lg-3 col-md-4 col-12">
+    <img class="img-fluid mb-3" src="{% static 'images/shoes/Swoosh/5.jpg' %}" alt="">
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <h5 class="p-name">SPorts shoes</h5>
+    <h4 class="p-price">$92.00</h4>
+    <button class="buy-btn"><a href="{% url 'collection' %}" class="text-white"> BUY NOW</a></button>
+  </div>
+  <div class="product text-center col-lg-3 col-md-4 col-12">
+    <img class="img-fluid mb-3" src="{% static 'images/shoes/Wonder2_grey/5.jpg' %}" alt="">
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <h5 class="p-name">SPorts shoes</h5>
+    <h4 class="p-price">$92.00</h4>
+    <button class="buy-btn"><a href="{% url 'collection' %}" class="text-white"> BUY NOW</a></button>
+  </div>
+  <div class="product text-center col-lg-3 col-md-4 col-12">
+    <img class="img-fluid mb-3" src="{% static 'images/shoes/Wonder2_black/5.jpg' %}" alt="">
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <h5 class="p-name">SPorts shoes</h5>
+    <h4 class="p-price">$92.00</h4>
+    <button class="buy-btn"><a href="{% url 'collection' %}" class="text-white"> BUY NOW</a></button>
+  </div>
+</div>
+<div></div>
+</section>
+
+<section id="banner" class="my-5 py-5">
+<div class="container">
+  <h4 class="text-uppercase">premium shoes</h4>
+  <h1 class="text-uppercase">not everyone is lucky..!!</h1>
+  <button class="text-uppercase"><a href="{% url 'collection' %}" class="text-white"> BUY NOW</a></button>
+</div>
+</section>
+
+<section id="shoes" class="my-5 pb-5">
+<div class="container text-center mt-5 py-5">
+  <h3 class="text-uppercase">best selling shoes</h3>
+  <hr class="mx-auto">
+  <p>Yes.. You can beat best of you with these...</p>
+</div>
+<div class="row mx-auto container-fluid">
+  <div class="product text-center col-lg-3 col-md-4 col-12">
+    <img class="img-fluid mb-3" src="{% static 'images/shoes/1.jpg' %}" alt="">
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <h5 class="p-name">SPorts shoes</h5>
+    <h4 class="p-price">$92.00</h4>
+    <button class="buy-btn"><a href="{% url 'collection' %}" class="text-white"> BUY NOW</a></button>
+  </div>
+  <div class="product text-center col-lg-3 col-md-4 col-12">
+    <img class="img-fluid mb-3" src="{% static 'images/shoes/2.jpg' %}" alt="">
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <h5 class="p-name">SPorts shoes</h5>
+    <h4 class="p-price">$92.00</h4>
+    <button class="buy-btn"><a href="{% url 'collection' %}" class="text-white"> BUY NOW</a></button>
+  </div>
+  <div class="product text-center col-lg-3 col-md-4 col-12">
+    <img class="img-fluid mb-3" src="{% static 'images/shoes/3.jpg' %}" alt="">
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <h5 class="p-name">SPorts shoes</h5>
+    <h4 class="p-price">$92.00</h4>
+    <button class="buy-btn"><a href="{% url 'collection' %}" class="text-white"> BUY NOW</a></button>
+  </div>
+  <div class="product text-center col-lg-3 col-md-4 col-12">
+    <img class="img-fluid mb-3" src="{% static 'images/shoes/4.jpg' %}" alt="">
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <h5 class="p-name">SPorts shoes</h5>
+    <h4 class="p-price">$92.00</h4>
+    <button class="buy-btn"><a href="{% url 'collection' %}" class="text-white"> BUY NOW</a></button>
+  </div>
+</div>
+<div></div>
+</section>
+
+
+
+{% endblock main_home_content %}

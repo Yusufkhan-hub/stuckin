@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block collections %}
+
+
+
+<section id="featured" class="my-0">
+  <div class="container mt-5 py-5">
+    <h2 class="font-weight-bold">Our Fetaured Products</h3>
+    <hr>
+    <p>Our latest products, stylish, comfortable.</p>
+  </div>
+  <div class="row mx-auto container">
+    {% for field in obj_all %}
+    <!--  onclick="window.location.href='#'" -->
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      {% if field.images %}
+          <td>
+              <img class="img-fluid mb-3" src="{{ field.images.url }}" alt=""><a href="{% url 'product' field.shoe_id %}"></a>
+              <!-- {% for item in objetcs_list %}-->
+              
+              <!--{% endfor %} -->
+          </td>
+      {% else %}
+          <td>
+              <img class="img-fluid mb-3" src="{% static 'static/images/shoes/1.jpg' %}" alt="">
+          </td>
+      {% endif %}
+      <div class="star">
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">{{field.model}}</h5>
+      <h4 class="p-price"> &#8377; &nbsp;{{field.price}}</h4>
+      <button class="buy-btn"><a class="text-white" href="{% url 'product' field.shoe_id %}">Buy Now </a></button>
+    </div>
+    {% endfor %}              
+  </div>
+</section>
+
+{% endblock collections %}
